@@ -5,6 +5,7 @@ var url = $request.url;
 // const path2 = "/x/v2/account/myinfo?";
 // const path3 = "/x/v2/account/mine\?";
 const pattern = "mix_extra"
+console.log(url);
 
 function replaceParamVal(oUrl, paramName, replaceWith) {
     var re = eval('/(' + paramName + '=)([^&]*)/gi');
@@ -13,6 +14,7 @@ function replaceParamVal(oUrl, paramName, replaceWith) {
 }
 if (url.indexOf(pattern) != -1) {
     url = replaceParamVal(url, "mix_extra", "0");
+    console.log(url);
 };
 $done({ url });
 
