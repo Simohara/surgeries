@@ -1,0 +1,14 @@
+#!name=NGA
+#!desc=NGA 内页去广告和去推荐
+# todo 修改推荐列表为非空以及解决服务器异常提示
+
+
+[Rule]
+
+[URL Rewrite]
+
+[Script]
+雅虎新闻去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/.*nga.*\.(com|cn)\/nuke.php\?__lib=app_inter&__act=(banner_list|recmd_topic),script-path=https://raw.githubusercontent.com/Simohara/surgeries/main/nga/nga.js
+
+[MITM]
+hostname = %APPEND% *.ngabbs.com, nga.178.com, nga.cn
