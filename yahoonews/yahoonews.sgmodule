@@ -6,7 +6,7 @@
 [URL Rewrite]
 
 [Script]
-http-response ^https:\/\/.*yahooapis\.jp\/v\d\/(countryCheck|ads),script-path=https://raw.githubusercontent.com/Simohara/surgeries/main/yahoonews/yahoo.js,requires-body=1,max-size=0
+雅虎新闻去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/.*yahooapis\.jp\/v\d\/(countryCheck|ads),script-path=https://raw.githubusercontent.com/Simohara/surgeries/main/yahoonews/yahoo.js
 
 [MITM]
 hostname = %APPEND% *.yahooapis.jp
