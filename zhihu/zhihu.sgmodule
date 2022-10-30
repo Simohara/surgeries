@@ -1,0 +1,9 @@
+#!name=知乎去广告
+#!desc=屏蔽知乎用户嗅探和广告 v22.10.30 
+
+[Rule]
+# 知乎广告拦截
+RULE-SET,https://raw.githubusercontent.com/Simohara/surgeries/main/zhihu/zhihu.list,REJEC
+#todo 网页修改去掉空缺
+[MITM]
+hostname = %APPEND% *.zhihu.com, pv.sohu.com, 103.41.167.*
