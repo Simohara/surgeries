@@ -1,0 +1,18 @@
+#!name=广告联盟
+#!desc=一个广告联盟的屏蔽列表
+
+[Rule]
+DOMAIN-SUFFIX,umengcloud.com,REJECT // 友盟
+DOMAIN,open.kuaishouzt.com,REJECT // 快手
+DOMAIN-SUFFIX,uyunad.com,REJECT // 优云
+DOMAIN-SUFFIX,umeng.com,REJECT // 友盟
+DOMAIN-SUFFIX,adkwai.com,REJECT // 快手
+URL-REGEX,https?:\/\/.*\.pglstatp-toutiao\.com\/obj\/ad-pattern,REJECT // 头条
+DOMAIN,api-access.pangolin-sdk-toutiao.com,REJECT // 头条
+URL-REGEX,^https?:\/\/api\.weibo\.com\/oauth2\/getaid\.json,REJECT // 微博
+DOMAIN-SUFFIX,tagtic.cn,REJECT // 今日头条
+DOMAIN-SUFFIX,snssdk.com,REJECT // 今日头条
+DOMAIN,app-measurement.com,REJECT // Firebase
+
+[MITM]
+hostname = %APPEND% *.pglstatp-toutiao.com, api.weibo.com
