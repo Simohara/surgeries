@@ -4,16 +4,16 @@ var url = $request.url;
 // const path1 = '/pgc/player/api/playurl';
 // const path2 = "/x/v2/account/myinfo?";
 // const path3 = "/x/v2/account/mine\?";
-const pattern = "mix_extra"
+const pattern = "X-AD"
 console.log(url);
 
 function replaceParamVal(oUrl, paramName, replaceWith) {
     var re = eval('/(' + paramName + '=)([^&]*)/gi');
-    var nUrl = oUrl.replace(re, paramName + '=' + replaceWith);
+    var nUrl = oUrl.replace(re, replaceWith);
     return nUrl;
 }
 if (url.indexOf(pattern) != -1) {
-    url = replaceParamVal(url, "mix_extra", "0");
+    url = replaceParamVal(url, pattern, "");
     console.log(url);
 };
 $done({ url });

@@ -1,11 +1,11 @@
-URL-REGEX,^https:\/\/(www\.zhihu\.com|.*)\/(check_health|sc-profiler)$
+URL-REGEX,^https:\/\/(www\.zhihu\.com|.*)\/(check_health|sc-profiler|plutus_adreaper)
 URL-REGEX,^https:\/\/(sugar\.zhihu\.com|.*)\/(glory_adreaper|ad-track)
 URL-REGEX,^https:\/\/(appcloud\.zhihu\.com|.*)\/v1\/(push_providers$|device)
 URL-REGEX,^https:\/\/appcloud2\.in\.zhihu\.com\/api\/envT
 URL-REGEX,^https:\/\/(m-cloud\.zhihu\.com|.*)\/api\/(app\/monitor|apm\/sampling|cloud\/config)
-URL-REGEX,^https:\/\/(api\.zhihu\.com|.*)\/(bazaar\/vip_tab|templates|lab\/api|commercial_api|feed-root|api\/privacy\/settings|market\/popovers_v2)
+URL-REGEX,^https:\/\/(api\.zhihu\.com|.*)\/(bazaar\/vip_tab|templates|lab\/api|commercial_api|feed-root|api\/privacy\/settings|market\/popovers_v2|brand\/question|api\/v\d+\/brand\/question|explore\/entry\/tips)
 URL-REGEX,^.*\/ad-style-service\/request
-URL-REGEX,^https:\/\/(www\.zhihu\.com|.*)\/api\/v4\/answers\/\d+\/recommendations
+URL-REGEX,^https?:\/\/(www\.zhihu\.com|.*)\/api\/v4\/answers\/\d+\/recommendations
 DOMAIN-SUFFIX,datahub.zhihu.com
 DOMAIN,zhihu-web-analytics.zhihu.com
 DOMAIN,pv.sohu.com
