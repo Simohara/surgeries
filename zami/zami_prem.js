@@ -19,6 +19,5 @@ body['contract'] = {
     body = JSON.stringify(body)
 $done({ body })
 
-// block https:\/\/googleads\.g\.doubleclick\.net\/mads
-// block https:\/\/imasdk\.googleapis\.com\/admob\/sdkloader
-// block https:\/\/googleads\.g\.doubleclick\.net\/getconfig
+// block https://googleads.g.doubleclick.net/mads/
+// block https://imasdk.googleapis.com/admob/sdkloader/native_video.html
