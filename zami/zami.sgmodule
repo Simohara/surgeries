@@ -14,4 +14,4 @@ URL-REGEX,^https:\/\/c\.amazon-adsystem\.com\/aps_mobile_client_config\.json$,RE
 zami_vip = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/api\.zaim\.net\/v2\/home\/premium,script-path=https://raw.githubusercontent.com/Simohara/surgeries/main/zami/zami_prem.js
 
 [MITM]
-hostname = %APPEND% api.zaim.net
+hostname = %APPEND% api.zaim.net, imasdk.googleapis.com, googleads.g.doubleclick.net
