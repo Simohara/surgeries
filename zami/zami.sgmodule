@@ -7,7 +7,7 @@ URL-REGEX,^https:\/\/imasdk\.googleapis\.com\/admob\/sdkloader,REJECT-TINYGIF
 URL-REGEX,^https:\/\/googleads\.g\.doubleclick\.net\/getconfig,REJECT-TINYGIF
 DOMAIN,firebaselogging-pa.googleapis.com,REJECT
 DOMAIN-SUFFIX,airtrack.jp,REJECT
-URL-REGEX,^https:\/\/c\.amazon-adsystem\.com\/aps_mobile_client_config\.json$,REJECT-TINYGIF
+DOMAIN-SUFFIX,amazon-adsystem.com,REJECT-TINYGIF
 [URL Rewrite]
 
 [Script]
