@@ -3,7 +3,7 @@
 
 [Rule]
 # 知乎广告拦截
-RULE-SET,https://raw.githubusercontent.com/Simohara/surgeries/main/zhihu/zhihu.list,REJEC
+RULE-SET,https://raw.githubusercontent.com/Simohara/surgeries/main/zhihu/zhihu.list,REJECT
 #todo 网页修改去掉空缺
 [MITM]
 hostname = %APPEND% *.zhihu.com, 103.41.167.*
