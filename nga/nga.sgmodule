@@ -11,4 +11,4 @@
 NGA = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/.*nga.*\.(com|cn)\/nuke.php\?__lib=app_inter&__act=(banner_list|recmd_topic),script-path=https://raw.githubusercontent.com/Simohara/surgeries/main/nga/nga.js
 
 [MITM]
-hostname = %APPEND% *.ngabbs.com, nga.178.com, nga.cn
+hostname = %APPEND% *ngabbs.com, nga.178.com, nga.cn
